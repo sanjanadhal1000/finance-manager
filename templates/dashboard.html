@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>💰 Dashboard</h1>
+    <p><b>Total Income:</b> ₹{{ income }}</p>
+    <p><b>Total Expense:</b> ₹{{ expense }}</p>
+    <p><b>Balance:</b> ₹{{ balance }}</p>
+
+    <a href="{{ url_for('add_transaction') }}">➕ Add Transaction</a>
+
+    <h2>All Transactions</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th><th>Type</th><th>Category</th><th>Amount</th><th>Note</th><th>Date</th><th>Action</th>
+        </tr>
+        {% for r in records %}
+        <tr>
+            <td>{{ r[0] }}</td>
+            <td>{{ r[1] }}</td>
+            <td>{{ r[2] }}</td>
+            <td>₹{{ r[3] }}</td>
+            <td>{{ r[4] }}</td>
+            <td>{{ r[5] }}</td>
+            <td><a href="{{ url_for('delete_transaction', id=r[0]) }}">❌ Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

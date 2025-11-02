@@ -1,0 +1,38 @@
+[
+    {
+        "id": 11,
+        "user_id": 1000,
+        "type": "income",
+        "amount": 10000.0,
+        "category": "Salary",
+        "note": "2025-11-02",
+        "date": ""
+    },
+    {
+        "id": 12,
+        "user_id": 1000,
+        "type": "income",
+        "amount": 20000.0,
+        "category": "Gift",
+        "note": "2025-11-02",
+        "date": ""
+    },
+    {
+        "id": 13,
+        "user_id": 1000,
+        "type": "expense",
+        "amount": 500.0,
+        "category": "Shopping",
+        "note": "2025-11-02",
+        "date": ""
+    },
+    {
+        "id": 14,
+        "user_id": 1000,
+        "type": "expense",
+        "amount": 1000.0,
+        "category": "Travel",
+        "note": "2025-11-02",
+        "date": ""
+    }
+]

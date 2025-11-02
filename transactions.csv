@@ -1,0 +1,5 @@
+ID,User_ID,Type,Amount,Category,Note,Date
+11,1000,income,10000.0,Salary,2025-11-02,
+12,1000,income,20000.0,Gift,2025-11-02,
+13,1000,expense,500.0,Shopping,2025-11-02,
+14,1000,expense,1000.0,Travel,2025-11-02,
